@@ -1,14 +1,25 @@
 {
   "name": "install-absolutely-nothing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "description": "A terminal application that simulates installing things but doesn't actually install anything.",
+  "main": "dist/index.js",
+  "bin": {
+    "install-absolutely-nothing": "dist/index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "simulation",
+    "install"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
